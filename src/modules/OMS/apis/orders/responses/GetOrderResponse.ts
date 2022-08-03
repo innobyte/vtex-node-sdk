@@ -13,12 +13,18 @@ interface AdditionalInfo {
   brandName?: string;
   brandId?: string;
   categoriesIds?: string;
+  categories?: Array<ItemCategory>
   productClusterId?: string;
   commercialConditionId?: string;
   dimension?: any;
   offeringInfo?: string;
   offeringType?: string;
   offeringTypeId?: string;
+}
+
+interface ItemCategory {
+  id?: number;
+  name?: string;
 }
 
 interface Item {
